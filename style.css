@@ -1,0 +1,170 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap);
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+body{
+    margin: 0 auto;
+    background-color: #EEE6D8;
+}
+
+
+
+
+.info  {
+  font-family: 'Ubuntu';
+  background-color: #DAAB3A;
+  display: flex;
+  justify-content: center;
+  gap: 100px; 
+  list-style : none;
+  padding-bottom: 25px;
+  padding-top:25px;
+  color: white;
+  font-size: 20px;
+  
+  
+}
+  
+
+
+
+
+
+header.h-top-page img{
+    width: 100px;
+}
+
+/* le contenaire dans lequel les information telles que Acueill, etc, sont  */
+
+header.h-top-page{
+    display: flex;
+    align-items: center;
+    gap: 40px;               
+    flex-wrap: wrap;         
+    text-align: center;      
+    padding: 20px;
+    
+}
+
+/*  l'image de sukuna */
+section.toppage{
+    background: url('../thukcover.jpg');
+    background-size: cover;
+    height: 100vh;
+    padding: 25px;
+    transition: transform 0.4s ease, z-index 0s;
+    position: relative; 
+    z-index: 1;
+}
+
+section.toppage:hover{
+  transform: scale(1.01);
+    z-index: 10;           
+    cursor: pointer;
+}
+
+
+    
+    
+    
+
+
+/*  menu de navigation de neuille. Tsais les rubriques en haut de page du genre : "Accueil, Qui sommes nous... */
+
+nav.nav-1{
+    display: flex;
+    list-style: none;
+    width: 50%;
+    margin-left: 100px;
+    justify-content: space-between;
+    max-width: 1000px;
+    padding: 20px;
+    
+    
+
+}
+
+nav.nav-1 li{
+    color: #e5e7e6;
+        
+    
+    
+    
+}
+
+/*  La grosse phrase écrite en gros. Le premier truc qui requiert otn attenttion, tia capté*/
+
+
+.big-title{
+    color: white;
+    font-size: 80px;
+    max-width: 20ch;
+    padding: 20px 50px;
+    font-family: 'Oswald';
+}
+
+
+
+.landingpage {
+  max-width: 600px;
+}
+/* On passe a la section du bas */
+
+.image-ligne{
+  display: flex;       
+  gap: 400px;           
+  justify-content: center; 
+  flex-wrap: wrap;     
+}
+
+.image{
+  width: 40%;         
+  max-width: 150px;    
+  height: auto;        
+}
+
+.conteneur-principal {
+  display: flex;         
+  justify-content: space-around; 
+  align-items: flex-start;      
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: nowrap;     
+}
+
+.image-texte {
+  width: 300px;          
+  border: 1px solid #ddd; 
+  border-radius: 10px;   
+  padding: 20px;
+  text-align: center;   
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+  background-color: #fff;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;    
+  width: 300px;           
+  text-align: center;
+}
+
+.image-texte {
+    display: inline-block;
+    animation: flotter 3s ease-in-out infinite;
+}
+
+@keyframes flotter {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); } /* Le texte monte de 15px */
+}
+
+
+
+.bloc-image-texte img {
+  width: 100%;            /* L'image prend toute la largeur de sa boîte de 300px */
+  height: auto;
+  margin-bottom: 15px;    /* Espace entre l'image et le texte */
+}
